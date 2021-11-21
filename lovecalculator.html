@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love calculator</title>
+    <link href="heart.jpg" rel="icon" type="image/jpg">
+    <script src="https://kit.fontawesome.com/a018575124.js" crossorigin="anonymous"></script>
+    <link href="lovecalculator.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+           Your Name: <input type="text" placeholder="enter your name...." id="name"><br> <br>
+           <i class="fas fa-heart"></i> <br> <br>
+           Partner name: <input type="text" placeholder="partner name..." id="partner"><br> <br>
+           <button id="btn" onclick="key()">hit me</button><br> <br>
+           <h3 id="findper"></h3>
+           <h1>Made by:- Manish_kumar</h1>
+        </div>
+    </div>
+    <script>
+            function key(){
+                var name = document.getElementById('name').value;
+                var partner = document.getElementById('partner').value;
+                var findper = document.getElementById('findper');
+
+                if( name=='' && partner== ""){
+                 alert('please enter name');
+                } else if (name.length<3 && partner.length<3) {
+                    alert('please enter proper name');
+                } else if (name==partner) {
+                    alert('hey, thats called self love');
+                } else{
+                    var one = Math.floor(Math.random()*100);
+                    findper.innerHTML= ` your love percentage is ${one}`
+                }
+                    
+                
+            
+
+               
+                
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

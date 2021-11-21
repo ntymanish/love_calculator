@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url('heart.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    background-color: pink;
+    text-align: center;
+    padding-top: 60px;
+}
+h1{
+    margin-top: 20px
+}
+#name{
+    font-size: 25px;
+}
+#partner{
+    font-size: 25px;
+}
+.fas{
+    font-size: 40px;
+    color: red;
+}
+#btn{
+    padding: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: teal;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+
+
